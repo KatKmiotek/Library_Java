@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Library {
     private ArrayList<Book> collection;
     private int capacity;
+    private Borrower borrower;
 
     public Library(){
         this.collection = new ArrayList<Book>();
@@ -20,5 +21,8 @@ public class Library {
         if(this.booksCount() < this.getCapacity()) {
             this.collection.add(book);
         }
+    }
+    public Book removeBook(){
+        return this.collection.remove(0);
     }
 }

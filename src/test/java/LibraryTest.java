@@ -7,6 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class LibraryTest {
     Library collection;
+    Borrower borrower;
     Book book;
     Book book1;
     Book book2;
@@ -23,6 +24,7 @@ public class LibraryTest {
         this.book3 = new Book("Malcolm Gladwell", "Outliers", "non-fiction");
         this.book4 = new Book("Bill Bryson", "Mother Tongue", "non-fiction");
         this.book5 = new Book("Lukasz Orbitowski", "Kult", "fiction");
+        this.borrower = new Borrower();
 
     }
     @Test
@@ -44,4 +46,5 @@ public class LibraryTest {
         collection.addBook(book5);
         assertEquals(5, collection.booksCount());
     }
+
 }

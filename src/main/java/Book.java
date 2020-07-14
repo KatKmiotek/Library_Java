@@ -10,6 +10,10 @@ public class Book {
         this.genre = genre;
     }
 
+    public Book getBook() {
+        return book;
+    }
+
     public String getTitle() {
         return title;
     }
